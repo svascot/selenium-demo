@@ -1,18 +1,18 @@
-package selenium;
+package selenium.actions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.time.Duration;
+import static selenium.utils.Utils.WIKIPEDIA_URL;
+import static selenium.utils.Utils.getDriver;
 
 public class ClickOnElement {
 
     // Click on a button and validate if it works.
     public static void main(String[] args) {
         WebDriver driver = getDriver();
-        driver.get("https://www.wikipedia.org/");
+        driver.get(WIKIPEDIA_URL);
         String expectedEnglishWebPageTitle = "Welcome to Wikipedia,";
 
         // Get the button and click it.
@@ -27,12 +27,4 @@ public class ClickOnElement {
 
         driver.close();
     }
-
-    private static WebDriver getDriver(){
-        WebDriver driver = new ChromeDriver();
-        System.setProperty("webdriver.chrome.driver", "chromedriver");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        return driver;
-    }
-
 }

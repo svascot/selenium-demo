@@ -1,4 +1,4 @@
-package selenium;
+package selenium.kickoff;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,6 +17,9 @@ public class Kickoff {
 
         // Amount of time the webdriver will wait for an element if it is not present.
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+        // Maximize the window could help to find elements that are hidden by de css on small screens.
+        driver.manage().window().maximize();
 
         driver.get("http://www.santiagovasco.com");
 

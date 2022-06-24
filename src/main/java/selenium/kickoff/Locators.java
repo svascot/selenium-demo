@@ -1,10 +1,9 @@
-package selenium;
+package selenium.kickoff;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.time.Duration;
+import static selenium.utils.Utils.getDriver;
 
 public class Locators {
 
@@ -43,13 +42,5 @@ public class Locators {
         System.out.println("By Id: " + (endTime-startTime));
 
         driver.close();
-    }
-
-    // IDK if this is a good practice, I moved this out just to clean the main method.
-    private static WebDriver getDriver() {
-        WebDriver driver = new ChromeDriver();
-        System.setProperty("webdriver.chrome.driver", "chromedriver");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        return driver;
     }
 }
