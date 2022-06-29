@@ -20,3 +20,4 @@ Sections:
    * [GetText](src/main/java/selenium/actions/GetText.java) How to get the text of a web element.
    * [ClickOnElement](src/main/java/selenium/actions/ClickOnElement.java) How to click on a button.
    * [SendText](src/main/java/selenium/actions/SendText.java) Example of how to write text in an input field.
+   * [WorkWithTables](src/main/java/selenium/actions/WorkWithTables.java) How to get info from a table.
