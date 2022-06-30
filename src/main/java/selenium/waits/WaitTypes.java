@@ -26,7 +26,7 @@ public class WaitTypes {
         WebElement element = driver.findElement(By.id("js-link-box-en"));
 
         // Explicit Wait
-        // Used to wait for an amount of time for a webElement before throwing an exception.
+        // Used to wait max amount of time for a specific condition of a webElement before throwing an exception.
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(element));
 

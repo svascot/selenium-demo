@@ -1,17 +1,6 @@
 # Selenium-demo
 This is a project where the practical classes of the [Automation Testing Masterclass](https://www.udemy.com/course/automation-testing-masterclass/) are implemented.
 
-To organize the project structure, the creation of the WebDriver is implemented in a utility class.
-```java
- public static WebDriver getDriver() {
-        WebDriver driver = new ChromeDriver();
-        System.setProperty("webdriver.chrome.driver", "chromedriver");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().window().maximize();
-        return driver;
-    }
-```
-
 Sections:
  * Kickoff:
    * [Kickoff](src/main/java/selenium/kickoff/Kickoff.java) Setting up the webdriver and open a web page.
@@ -23,3 +12,18 @@ Sections:
    * [WorkWithTables](src/main/java/selenium/actions/WorkWithTables.java) How to get info from a table.
  * Waits
    * [WaitTypes](src/main/java/selenium/waits/WaitTypes.java) Different types of waits.
+ * JavaScriptExecutor
+   * [JavascriptExecutorExamples](src/main/java/selenium/javascriptexecutor/JavascriptExecutorExamples.java) Some examples about executing javascript code.
+
+To organize the project structure, the creation of the WebDriver is implemented in a utility class, alongside the Wikipedia URL that is used in many examples.
+```java
+ public static final String WIKIPEDIA_URL= "https://www.wikipedia.org/";
+
+ public static WebDriver getDriver() {
+        WebDriver driver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().window().maximize();
+        return driver;
+    }
+```
