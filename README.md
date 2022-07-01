@@ -15,8 +15,9 @@ This is a project where the practical classes of the [Automation Testing Masterc
  * JavaScriptExecutor:
    * [JavascriptExecutorExamples](src/main/java/selenium/javascriptexecutor/JavascriptExecutorExamples.java) Some examples about executing javascript code.
  * Alerts:
-   * [Alerts](src/main/java/selenium/alerts/Alerts.java) Example about how to handler alerts. 
-
+   * [Alerts](src/main/java/selenium/alerts/Alerts.java) Example about how to handler alerts.
+ * iFrames:
+   * [WorkWithIframes](src/main/java/selenium/iframes/WorkWithIframes.java) How to work with iFrames.
 
 To organize the project structure, the creation of the WebDriver is implemented in a utility class, alongside the Wikipedia URL that is used in many examples.
 ```java
