@@ -33,3 +33,6 @@ To organize the project structure, the creation of the WebDriver is implemented 
         return driver;
     }
 ```
+### Notes
+This is a PDF with some notes and examples, it is pretty much the same content.
+[![notes/Automation-Testing-Notes.pdf](notes/image.png)](notes/Automation-Testing-Notes.pdf)
