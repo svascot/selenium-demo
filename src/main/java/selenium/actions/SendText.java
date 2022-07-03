@@ -14,7 +14,7 @@ public class SendText {
         driver.get(WIKIPEDIA_URL);
         String searchFor = "Selenium webdriver";
 
-        // As an input I can call the method submit, the oder way to perfom this is finding the "search" button and click it.
+        // As an input I can call the method submit, the oder way to perform this is finding the "search" button and click it.
         WebElement searchInput = driver.findElement(By.id("searchInput"));
         searchInput.sendKeys(searchFor);
         searchInput.submit();
