@@ -11,6 +11,7 @@ This is a project where the practical classes of the [Automation Testing Masterc
    * [SendText](src/main/java/selenium/actions/SendText.java) Example of how to write text in an input field.
    * [WorkWithTables](src/main/java/selenium/actions/WorkWithTables.java) How to get info from a table.
    * [SelectExample](src/main/java/selenium/actions/SelectExample.java) How to select an option from a Select component. 
+   * [ActionsExample](src/main/java/selenium/actions/ActionsExample.java) How to perform actions as drag and drop elements, do a right click.
  * Waits:
    * [WaitTypes](src/main/java/selenium/waits/WaitTypes.java) Different types of waits.
  * JavaScriptExecutor:
